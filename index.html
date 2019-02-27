@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart Labb</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="semantic/dist/semantic.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- Product Modal -->
+<div class="ui modal">
+  <!---->
+  <!---->
+</div>
+
+<!-- Menu -->
+<div id="top-menu" class="ui menu fixed top">
+  <div class="item cart right">
+    <div class=" green ui button" onclick="$('.ui.modal').modal('show');showCart()"><i class="shopping cart icon"></i> <span
+            id="products-in-cart"></span></div>
+  </div>
+  <a href="checkout.html">
+    <div class="item">
+      <div class="ui blue button"> Checkout </div>
+    </div>
+  </a>
+</div>
+
+<!-- Products -->
+<div id="context">
+  <div id="product-page" class="ui grid container cards center aligned">
+    <!---->
+    <!---->
+  </div>
+</div>
+<script src="semantic/dist/semantic.js"></script>
+<script src="JavaScript/main.js"></script>
+<script>
+  $('.ui.sticky')
+    .sticky();
+</script>
+</body>
+</html>

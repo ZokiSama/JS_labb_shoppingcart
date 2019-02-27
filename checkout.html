@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - Shopping Cart Labb</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="semantic/dist/semantic.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- Product Modal -->
+<div class="ui basic modal">
+  <div class="ui icon header">
+    <i class="archive icon"></i>
+    Complete Payment
+  </div>
+  <div class="content">
+    <p>Are you sure you want to complete the purchase</p>
+  </div>
+  <div class="actions">
+    <div class="ui red basic cancel inverted button">
+      <i class="remove icon"></i>
+      No
+    </div>
+    <div class="ui green ok inverted button" onclick="completePurchase()">
+      <i class="checkmark icon"></i>
+      Yes
+    </div>
+  </div>
+</div>
+
+<!-- Menu -->
+<div id="top-menu" class="ui menu fixed top">
+  <a href="index.html">
+    <div class="item">
+      <div class="ui blue button"> Back </div>
+    </div>
+  </a>
+</div>
+
+<!-- Products -->
+<div id="context">
+  <div id="product-page" class="ui two column container">
+    <div class="column">
+      <div class="ui header">Checkout</div>
+      <div class="description">
+        <table class="ui four column table">
+          <thead>
+          <tr>
+            <th>Title</th>
+            <th>Disc Type</th>
+            <th>Quantity</th>
+            <th>Price &aacute;</th>
+          </tr>
+          </thead>
+          <tbody id="show-products">
+          <!---->
+          <!---->
+          </tbody>
+          <tfoot id="show-sums">
+
+          </tfoot>
+        </table>
+      </div>
+      <div class="item">
+        <button class="ui right labeled icon button positive right floated" onclick="$('.ui.basic.modal').modal('show')">
+          <i class="right arrow icon"></i>
+          Complete payment
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="semantic/dist/semantic.js"></script>
+<script src="JavaScript/checkout.js"></script>
+<script>
+  $('.ui.sticky')
+    .sticky();
+</script>
+</body>
+</html>

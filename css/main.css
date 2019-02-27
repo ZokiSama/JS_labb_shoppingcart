@@ -1,0 +1,23 @@
+body {
+    height: auto;
+}
+
+#context {
+    margin-top: 80px;
+}
+
+.modal-description{
+    max-width: 50%;
+}
+
+.field {
+    margin: 4px 0;
+}
+
+.field>#add-cart {
+    margin-top: 10px;
+}
+
+em {
+    font-weight: bolder;
+}
